@@ -1,12 +1,12 @@
-const express = require('express');
-const cors = require('cors');
-const user = require('./routes/user')
+const express = require('express'); //imports the express library
+const cors = require('cors'); // imports the cors module
+const user = require('./routes/user') //imports the users path from routes
 require('./database'); // Import the database module
 
 // Other imports and configurations
 
-const app = express();
-const PORT = 3002;
+const app = express(); // creates an instance of the express library
+const PORT = 3002; //explicitly defines port
 
 // Middleware and routes setup
 app.use(express.json());
