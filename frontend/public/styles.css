@@ -1,8 +1,4 @@
-#userForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 
 html,
 body {
@@ -13,4 +9,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-container form {
+  margin: 0 20px
+}
+
+#userForm, #getUserEmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
 }
