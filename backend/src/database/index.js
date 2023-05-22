@@ -6,4 +6,4 @@ mongoose.connect('mongodb+srv://mongodb27:{mongodb27!}@first-survey.k0ktgdy.mong
   })
   .catch((error) => {
     console.error('Error connecting to MongoDB:', error);
-  });
+  }); 
