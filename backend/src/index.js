@@ -1,6 +1,7 @@
 const express = require('express'); //imports the express library
 const cors = require('cors'); // imports the cors module
 const user = require('./routes/user') //imports the users path from routes
+const users_get = require('./routes/users-get') //imports the user path from routes
 require('./database'); // Import the database module
 
 // Other imports and configurations
@@ -15,6 +16,7 @@ app.use(cors());
 
 
 app.use('/users', user)
+app.use('/users-get', users_get)
 
 // Start the server
 app.listen(PORT, () => {
