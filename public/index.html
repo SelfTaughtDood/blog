@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/src/scripts/postScript.js" defer></script>
+  <script src="/src/scripts/getScript.js" defer></script>
+  <script src="src/index.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Project Database</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Project Database</h1>
+  </header>
+
+  <div class="wrapper">
+    <!-- Form Section -->
+    <section class="form-section">
+      <div class="form-container">
+        <form id="userForm">
+          <p>Enter new user info:</p>
+          <input type="text" name="name" id="nameInput" placeholder="Name" required>
+          <input type="email" name="email" id="emailInput" placeholder="Email" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="message"></div>
+    </section>
+
+    <!-- User List Section -->
+    <section class="user-list-section">
+      <h2>User List:</h2>
+      <button id="getUserListBtn">Get User List</button>
+      <div id="userList"></div>
+      
+    </section>
+  </div>
+</body>
+</html>
