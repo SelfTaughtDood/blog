@@ -1,41 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="/frontend/src/scripts/postScript.js" defer></script>
-  <script src="/frontend/src/scripts/getScript.js" defer></script>
-  <script></script>
-  <link rel="stylesheet" href="styles.css">
-  <title>Project Database</title>
-</head>
-<body>
-  <!-- Header Section -->
-  <header>
-    <h1>Project Database</h1>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="root"></div>
 
-  <div class="wrapper">
-    <!-- Form Section -->
-    <section class="form-section">
-      <div class="form-container">
-        <form id="userForm">
-          <p>Enter new user info:</p>
-          <input type="text" name="name" id="nameInput" placeholder="Name" required>
-          <input type="email" name="email" id="emailInput" placeholder="Email" required>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-      <div id="message"></div>
-    </section>
+    <!-- The bundled JavaScript files will be injected here -->
 
-    <!-- User List Section -->
-    <section class="user-list-section">
-      <h2>User List:</h2>
-      <div id="userList"></div>
-      <button id="getUserListBtn">Get User List</button>
-    </section>
-  </div>
-</body>
+  </body>
 </html>

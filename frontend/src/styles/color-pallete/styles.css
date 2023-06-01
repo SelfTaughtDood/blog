@@ -1,0 +1,18 @@
+/* Color Palette */
+
+:root {
+  /* Primary Colors */
+  --color-primary: #264653; /* Dark Teal */
+  --color-primary-light: #457b9d; /* Teal */
+  --color-primary-dark: #1a3b4b; /* Dark Teal */
+
+  /* Secondary Colors */
+  --color-secondary: #2a9d8f; /* Greenish Teal */
+  --color-secondary-light: #5ebea9; /* Light Teal */
+  --color-secondary-dark: #20706d; /* Dark Greenish Teal */
+
+  /* Accent Colors */
+  --color-accent1: #e76f51; /* Burnt Orange */
+  --color-accent2: #f4a261; /* Light Orange */
+  --color-accent3: #e9c46a; /* Sand Yellow */
+}
