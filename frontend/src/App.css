@@ -9,40 +9,36 @@
   --color-accent1: #e76f51; /* Burnt Orange */
 }
 
-body {
-  background-color: var(--color-primary);
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
-
-.grid-container {
-  display: grid;
-  grid-template-rows: auto 1fr; /* Auto height for header, 1fr for the remaining content */
-  min-height: 100vh; /* Ensure the grid container fills the entire viewport */
-  gap: 10px; /* Add some gap between the rows */
-  justify-items: start; /* Align the items to the start (left) of the grid cells */
-  width: 100vw; /* Set the width of the container to 90% of the viewport width */
-  margin: 0 auto; /* Center the container horizontally */
-}
-
-header {
-  color: var(--color-accent1);
-}
-
-
 .button-container {
-  display: grid;
-  grid-auto-rows: 100px; /* Set the row height to fit the content */
-  /* gap: 10px; Add some gap between the rows */
-  justify-items: center; /* Center the items horizontally */
-  width: 100vw;
+  /* Your existing styles for the button container */
+
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
 }
 
-button {
-  font-size: 50px;
+.slide-out {
+  transform: translateX(-100%);
+}
+
+.form-container {
+  /* Styles for the form container */
+  /* You can customize this to match your design */
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  text-align-last: left;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  animation: slideIn 0.3s ease-in-out;
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 

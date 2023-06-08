@@ -1,0 +1,37 @@
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+button {
+
+  /* button element */
+
+  /* text/font */
+  color: black;
+  text-align-last: left;
+  font-size: xx-large;
+  
+  /* remove borders from buttons */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  /* button size */
+  width: 18rem;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color Palette */
+  --color-primary: #264653; /* Dark Teal */
+  --color-accent1: #e76f51; /* Burnt Orange */
+}
+

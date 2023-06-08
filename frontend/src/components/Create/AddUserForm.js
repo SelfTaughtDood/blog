@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import '../../styles/media-queries.css';
+import '../../App.css'
+
+
 
 function UserFormSection() {
   const [name, setName] = useState('');
@@ -37,7 +41,7 @@ function UserFormSection() {
   };
 
   return (
-    <section className="form-section">
+    <section className="form-section popup">
       <div className="form-container">
         <form onSubmit={handleFormSubmit}>
           <p>Enter new user info:</p>

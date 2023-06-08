@@ -2,17 +2,6 @@ const { Router } = require('express');
 const router = Router();
 const User = require('../database/schemas/User')
 
-
-const testArray = [
-  {
-    item: "apples",
-    quantity: 3
-  }
-]
-router.get('/', (req, res) => {
-  res.download('index.js')
-})
-
 router.post('/', (req, res) => {
   const { name, email } = req.body;
 
