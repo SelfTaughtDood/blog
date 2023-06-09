@@ -7,8 +7,11 @@ const FormMenu = ({ onBack }) => {
   return (
     <>
       <div className='form-container'>
-      <button onClick={onBack}>Back</button>
-      <p>create user</p>
+        
+        <button className='back-button' onClick={onBack}>Back</button>
+        <p>create user</p>
+        <Form />
+        
       </div>
     </>
   );

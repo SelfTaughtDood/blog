@@ -9,36 +9,28 @@
   --color-accent1: #e76f51; /* Burnt Orange */
 }
 
-.button-container {
-  /* Your existing styles for the button container */
-
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(0);
+.slide-in {
+  animation: slide-in 0.3s ease-in-out;
 }
 
 .slide-out {
-  transform: translateX(-100%);
+  animation: slide-out 0.3s ease-in-out;
 }
 
-.form-container {
-  /* Styles for the form container */
-  /* You can customize this to match your design */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  padding: 20px;
-  animation: slideIn 0.3s ease-in-out;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
   }
-  to {
+  100% {
     transform: translateX(0);
   }
 }
 
+@keyframes slide-out {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
