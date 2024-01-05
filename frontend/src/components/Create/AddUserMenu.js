@@ -3,7 +3,7 @@ import '../../App.css'
 import Form from '../Create/AddUserForm'
 // import Form from '../Create/AddUserForm'
 
-const FormMenu = ({ onBack }) => {
+const FormScreen = ({ onBack }) => {
   return (
     <>
       <div className='form-container'>
@@ -18,4 +18,4 @@ const FormMenu = ({ onBack }) => {
 };
 
  
-export default FormMenu;
+export default FormScreen;
