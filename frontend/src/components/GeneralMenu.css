@@ -35,3 +35,9 @@ button {
   --color-accent1: #e76f51; /* Burnt Orange */
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

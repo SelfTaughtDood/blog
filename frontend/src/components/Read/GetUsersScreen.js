@@ -1,5 +1,6 @@
 import '../../styles/media-queries.css';
 import '../../App.css'
+import UserList from './GetUsers'
 // import Form from '../Create/AddUserForm'
 
 const UserListMenu = ({ onBack }) => {
@@ -7,7 +8,7 @@ const UserListMenu = ({ onBack }) => {
     <>
       <div className='form-container'>
       <button onClick={onBack}>Back</button>
-      <p>get user</p>
+      <UserList />
       </div>
     </>
   );
